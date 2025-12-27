@@ -1,0 +1,46 @@
+/* Small helpers for the GSAP practice playground */
+html, body {
+	height: 100%;
+    overflow-x: hidden;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure main content sits below fixed nav on very small screens */
+@media (max-width: 640px) {
+	main { padding-top: 5rem; }
+}
+
+.gallery-item { overflow: hidden; }
+
+
+#text-scroll {
+   
+  --target: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #000 var(--target), #fff var(--target));
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-scroll h1 {
+     margin: 3rem 0;
+  color: white;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  text-align: center;
+  letter-spacing: -0.02em;
+  background: linear-gradient(to right, #fff var(--target), #000 var(--target));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  display: block;
+  line-height: 0.95;
+}
+#text-scroll h1 span {
+  font-size: 0.5em;
+  display: block;
+}
