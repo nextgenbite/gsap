@@ -86,8 +86,10 @@ window.addEventListener('wheel', function (e) {
     let delta = e.deltaY;
     if (delta > 0) {
         gsap.to('.page3 .marquee', { xPercent: -50, ease: "none", duration: 5, repeat: -1 });
+        gsap.to('.page3 .marquee  i', {  duration: .5, rotation: 0 });
     } else {
         gsap.to('.page3 .marquee', { xPercent: 0, ease: "none", duration: 5, repeat: -1 });
+        gsap.to('.page3 .marquee i', {  duration: .5, rotation: -180 });
     }
 });
 

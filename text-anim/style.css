@@ -38,17 +38,23 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    transition:  0.3s al;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    padding: 8px 15px;
     font-size: 18px;
     transition: 0.3s;
+    border-radius: 20%;
 }
 
 nav ul li a:hover {
+    
     color: #ff3f3f;
+    background-color: rgba(255, 255, 255, 0.502);
+    
 }
 .menu-btn {
     /* display: none; */
